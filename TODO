@@ -1,0 +1,12 @@
+TODO list for Posy-Plugin-MultiEntry
+====================================
+  1. multiple entries for an entry file
+    Added:27/03/05, 17:27  Priority: medium
+
+  2. sort which puts the original entry first
+    Added:27/03/05, 17:28  Priority: medium
+
+  3. way for templates to distinguish between 'prefix' entry and others
+    Added:27/03/05, 17:28  Priority: medium
+
+
