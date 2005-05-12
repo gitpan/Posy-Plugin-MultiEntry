@@ -1,6 +1,13 @@
 Revision history for Posy-Plugin-MultiEntry
 ===========================================
 
+0.02 Thu 12 May 2005
+--------------------
+
+  * (12 May 2005) update Posy version
+
+  * (12 May 2005) add Makefile.PL
+
 0.01 Mon 28 March 2005
 ----------------------
 

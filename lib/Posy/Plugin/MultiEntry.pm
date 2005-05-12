@@ -7,11 +7,11 @@ Posy::Plugin::MultiEntry - Posy plugin to enable multiple entries to display for
 
 =head1 VERSION
 
-This describes version B<0.01> of Posy::Plugin::MultiEntry.
+This describes version B<0.02> of Posy::Plugin::MultiEntry.
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
