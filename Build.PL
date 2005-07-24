@@ -8,7 +8,7 @@ my $builder = Module::Build->new(
     dist_author         => 'Kathryn Andersen',
     dist_version_from   => 'lib/Posy/Plugin/MultiEntry.pm',
 	requires            => {
-	'Posy' => 0.95,
+	'Posy' => 0.98,
 	},
     build_requires => {
         'Test::More' => 0,

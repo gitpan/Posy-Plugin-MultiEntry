@@ -1,6 +1,20 @@
 Revision history for Posy-Plugin-MultiEntry
 ===========================================
 
+0.03 Sat 23 July 2005
+---------------------
+
+  * (23 Jul 2005) complete revamp
+  	This has been changed around completely to be simpler and more
+  straightforward; instead of trying to do special things with the entry
+  which triggers multi-entry behaviour, everything is treated just as if
+  we were in a category path, and the path-type is changed to 'category'
+  in keeping with this (and the config vars are re-set).
+  	Also added multi_entry_exclude and multi_entry_include config
+  variables, to be able to filter the entries selected.  Thus one can
+  use this to display a sub-set of the entries for the current category,
+  based in their filenames.
+
 0.02 Thu 12 May 2005
 --------------------
 

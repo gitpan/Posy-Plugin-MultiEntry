@@ -7,7 +7,7 @@ for special entry files.
 
 ==== VERSION ====
 
-This describes version ``0.02'' of Posy::Plugin::MultiEntry.
+This describes version ``0.03'' of Posy::Plugin::MultiEntry.
 
 
 ==== DESCRIPTION ====
@@ -17,32 +17,29 @@ like special "category" pages; Posy will display not only that entry, but
 all the entries which would normally be selected when that category is
 displayed. This can be set up using a per-file config file, which would
 enable one to use different settings for just that page, such as sorting in
-a different order, and so on.
+a different order, showing a special sub-set of files, and so on.
 
-This plugin replaces the 'select_entries' and 'sort_entries' actions. When
-using this plugin in conjunction with others which override 'sort_entries'
-(such as Posy::Plugin::Info), this plugin should go later in the plugins
-list than them, otherwise its sort will be overridden.
+This plugin replaces the 'select_entries' action.
 
 
 ==   Configuration   ==
 
 This expects configuration settings in the $self->{config} hash, which, in
-the default Posy setup, can be defined in the main "config" file in the data
-directory.
+the default Posy setup, can be defined in the main "config" file in the
+config directory.
 
 ``multi_entry_on''
 Turn on multi-entry selection if the path-type is an entry. (default: false)
 
-``multi_entry_change_type''
-If multi_entry_on is true and multi_entry_change_type is true, change the
-path-type to be 'category' or 'top_category'. (default: true)
+``multi_entry_exclude''
+Filter out the entries in the current category which match this pattern.
+Note that one can actually set this to exclude the entry that the
+multi_entry selection is being done with!
 
-``multi_entry_place_first''
-If true, (and multi_entry_on) this will place the original entry first in
-the displayed list of entries. This could be used to make that entry contain
-introductory information, followed by all the other entries. (default:
-false)
+``multi_entry_include''
+Only keep the entries in the current category which match this pattern. An
+entry has to both match the include pattern and not match the exclude
+pattern for it to be included.
 
 
 ==== INSTALLATION ====
